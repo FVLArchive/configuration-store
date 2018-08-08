@@ -7,7 +7,7 @@ export interface IConfigurationStore {
   getUserData<T>(key: string, defaultValue?: T): Promise<T>
 }
 
-export abstract class BaseConfigurationStore {
+export abstract class BaseConfigurationStore implements IConfigurationStore {
   constructor(public userID: string, private globalPath = 'internal/global/', private userPath = 'internal/user/') {}
 
   protected abstract setData<T>(settingsPath: string, value: T): Promise<T>;
