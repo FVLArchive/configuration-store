@@ -6,12 +6,14 @@ Simple interface for storing settings or document storage using your whatever ba
 
 Implement the `IConfigurationStore` or extend the `BaseConfigurationStore` class.
 
-## Create and initialize the object.
-
 ```ts
-const currentUserId = '1234';
-const settings = new FirebaseRTDBConfigurationStore(currentUserId, '/custom/pathToGlobalConfig/', '/custom/pathToUserConfig');
-return settings.init().then(() => {...});
+class YourConfigurationStore extends BaseConfigurationStore {
+  ...
+}
+
+const settings = new YourConfigurationStore(...);
+await settings.init();
+...
 ```
 
 ## Retrieve values by key or get it's default value if a value doesn't exist for the key.
