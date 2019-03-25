@@ -1,6 +1,5 @@
 
 export interface IConfigurationStore {
-  init<TOption>(options?: TOption): Promise<IConfigurationStore>
   setGlobalData<T>(key: string, value: T): Promise<T>
   getGlobalData<T>(key: string, defaultValue?: T): Promise<T>
   setUserData<T>(key: string, value: T): Promise<T>
@@ -12,7 +11,6 @@ export abstract class BaseConfigurationStore implements IConfigurationStore {
 
   protected abstract setData<T>(settingsPath: string, value: T): Promise<T>;
   protected abstract getData<T>(settingsPath: string, defaultValue?: T): Promise<T>;
-  public abstract init<TOption>(options?: TOption): Promise<IConfigurationStore>;
 
   private getGlobalSettingsPath(key: string): string {
     return `${this.globalPath}${key}`
