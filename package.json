@@ -1,6 +1,6 @@
 {
   "name": "@fvlab/configurationstore",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Models, interfaces and base classes to support basic key-value configuration storage at global and user levels",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,5 +24,7 @@
     "typescript": "^2.5.3"
   },
   "dependencies": {},
-  "files": ["dist/**/*"]
+  "files": [
+    "dist/**/*"
+  ]
 }
