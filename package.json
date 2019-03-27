@@ -1,26 +1,28 @@
 {
   "name": "@fvlab/configurationstore",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Models, interfaces and base classes to support basic key-value configuration storage at global and user levels",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fvllam/configurationStore.git"
+    "url": "git+https://github.com/FairVenturesLab/configurationStore.git"
   },
   "author": "FairVentures Lab",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/fvllam/configurationStore/issues"
+    "url": "https://github.com/FairVenturesLab/configurationStore/issues"
   },
-  "homepage": "https://github.com/fvllam/configurationStore#readme",
+  "homepage": "https://github.com/FairVenturesLab/configurationStore#readme",
   "devDependencies": {
     "tslint": "^5.8.0",
     "typescript": "^2.5.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": ["dist/**/*"]
 }
