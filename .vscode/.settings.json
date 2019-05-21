@@ -1,0 +1,9 @@
+{
+	"editor.formatOnSave": true,
+	"prettier.printWidth": 110,
+	"prettier.singleQuote": true,
+	"prettier.useTabs": true,
+	"prettier.semi": true,
+	"editor.rulers": [110],
+	"rewrap.wrappingColumn": 110
+}
